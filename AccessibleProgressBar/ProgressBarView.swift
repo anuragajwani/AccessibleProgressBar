@@ -40,6 +40,7 @@ class ProgressBarView: UIView {
     private func commonInit() {
         self.layer.addSublayer(self.progressLayer)
         progressLayer.backgroundColor = UIColor.systemBlue.cgColor
+        self.isAccessibilityElement = true
         self.accessibilityLabel = "progress bar"
     }
 
